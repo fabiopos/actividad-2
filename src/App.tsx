@@ -1,11 +1,11 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
+import TodoPage from "./pages/TodoPage";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button>Click me</Button>
+      <h1 className="text-3xl font-bold">TodoApp</h1>
+      <TodoPage />
     </>
   );
 }
