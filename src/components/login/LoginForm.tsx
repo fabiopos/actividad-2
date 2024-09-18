@@ -14,6 +14,9 @@ interface ILoginError {
   error: string;
 }
 
+// eve.holt@reqres.in
+// cityslicka
+
 const uri = "https://reqres.in/api/login";
 
 export default function LoginForm() {
