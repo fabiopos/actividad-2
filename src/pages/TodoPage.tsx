@@ -15,6 +15,7 @@ export default function TodoPage() {
   const addTodo = useCallback(() => {
     setTodos((prev) => [...prev, { done: false, id: nextId, name: "" }]);
   }, [nextId]);
+  
   const onCheckedChange = (id: string, checked: CheckedState) => {
     setTodos((prev) =>
       prev.map((x) => {
@@ -38,8 +39,8 @@ export default function TodoPage() {
       <>
         <div className="flex justify-end">
           <Button onClick={addTodo}>Add to-do</Button>
-          <span>NextId = {nextId}</span>
-          <span>Count = {todosCount}</span>
+          {/* <span>NextId = {nextId}</span>
+          <span>Count = {todosCount}</span> */}
         </div>
         <div className="p-5">
           {todos.map((todo) => (
